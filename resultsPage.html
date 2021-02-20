@@ -4,10 +4,10 @@
 <head>
 	<title>Results</title>
 	<link href="resultsPageStyle.css" rel="stylesheet">
+	<script src="resultsPage.js" type ="text/javascript"></script>
 </head>
 
 <body>
-
 	<div class="header"> 
 	<span class="carbon">
 	<p>Carbon Footprint Tracker</p>
@@ -27,19 +27,14 @@
 	</span>
 	<span class="dot">
   	<span class="lb">
-  		<script>let pounds; pounds=100; document.write(pounds);</script> lb
+  	<script>displayPounds();</script> lb
   	</span>
   	</span>
   	<div class="smallerbox">
   	<span class="recommendations">
   		Recommendations:
   		<br>
-  		<script>let recommendations=["Stop this", "Continue doing this", "Blah, blah", "You are killing the earth"];
-  		for(let i=0; i<recommendations.length; i++)
-  		{
-  			document.write(recommendations[i] + ". ");
-  		}
-  		</script>
+  		<script>displayRecommendations();</script>
   	</span>
   	</div>
     </div>
