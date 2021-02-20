@@ -1,40 +1,67 @@
 body{
-    background-size: 50% auto;
-    background-color: #66BA9C;
+    background: linear-gradient(90deg, #66BA9C 50%, transparent 50%);
 }
-.page-title{
+.container .page-title{
     position: relative;
-    margin-top: 10rem;
-    margin-left: 5rem;
+    font-size: 48px;
+    top: 5rem;
     color: white;
     width: 25rem;
     word-wrap: break-word;
 }
+.container .title-right{
+    position: relative;
+    color: black;
+    font-size: 30px;
+    top: 6.5rem;
+    left: 5rem;
+    word-wrap: break-word;
+}
 .btn{
+    position: relative;
     color: white;
-    margin-left: 60rem;
-    width: 10rem;
+    top: 9rem;
+    left: 47rem;
     background-color: #66BA9C;
+  
+}
+.zip-code{
+    position: relative;
+    top: 6rem;
+    left: 44rem;
+    width: 22%;
 
 }
-.flex-rectangle:before{
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-
-#subheader{
-    color: #18503B;
-    margin-top: 3rem;
-}
-#right-text{
-    text-align: center;
-    top: 20rem;
+#carouselExampleIndicators{
+    position: relative;
+    top: 3rem;
+    left: 4rem;
+    width: 300px;
     
 }
-.form-control{
-    margin-left: 50rem;
-    width: 10%;
+.sub-text{
+    font-size: 20px;
+    position: relative;
+    top: 6rem;
+    left: .5rem;
+    color: #18503B;
+    width: 35rem;
+    word-wrap: break-word;
+    font-weight: bold;
 }
+.sub-text2{
+    font-size: 20px;
+    position: relative;
+    top: 8rem;
+    left: .5rem;
+    color: #18503B;
+    width: 35rem;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+
+
+
 
 
