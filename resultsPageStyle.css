@@ -1,0 +1,118 @@
+.header{
+	width: 1920px;
+	height: 100px;
+	background: #66BA9C;
+}
+
+.carbon {
+	width: 413px;
+	height: 55px;
+	left: 25px;
+	top: 21px;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 70px;
+	text-align: start;
+
+	color: #FFFFFF;
+}
+.results{
+	width:795px;
+	height:78px;
+	left:322px;
+	top:155px;
+	margin-bottom: 20px;
+
+	font-family: Nunito;
+	font-style:normal;
+	font-weight:normal;
+	font-size:64px;
+	line-height: 87px;
+	text-align:center;
+	color: black;
+}
+
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom:50px;
+}
+
+.box {
+width: 932px;
+height: 673px;
+left: 254px;
+top: 278px;
+
+background: #CDEBE0;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 25px;
+}
+
+.CO2 {
+width: 456px;
+height: 59px;
+left: 492px;
+top: 316px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 65px;
+
+color: #000000;
+
+}
+
+.smallerbox{
+width: 739px;
+height: 175px;
+left: 350px;
+top: 715px;
+
+background: #66BA9C;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+.recommendations {
+width: 513px;
+height: 54px;
+left: 463px;
+top: 736px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 49px;
+text-align: center;
+
+color: #000000;
+}
+
+.lb {
+width: 168px;
+height: 93px;
+left: 636px;
+top: 482px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 175px;
+text-align: center;
+
+color: #000000;
+
+}
