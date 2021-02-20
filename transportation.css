@@ -12,7 +12,7 @@ h2 {
 h1 {
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-weight: normal;
 }
 
@@ -23,19 +23,21 @@ form {
     margin-right: auto;
     border-radius: 10px;
     background-color: #CDEBE0;
+    padding: 15px;
 }
 
 label, input {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 } 
 
 label {
     margin-left: 30px;
+    font-size: 18px;
 }
 
 select, input {
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 button {
@@ -57,4 +59,8 @@ button {
     position: absolute;
     left: 24px;
     bottom: 24px;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
