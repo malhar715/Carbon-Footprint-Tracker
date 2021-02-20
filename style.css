@@ -1,40 +1,20 @@
 body{
     background: linear-gradient(90deg, #66BA9C 50%, transparent 50%);
 }
-.container .page-title{
-    position: relative;
-    font-size: 48px;
-    top: 5rem;
-    color: white;
-    width: 25rem;
-    word-wrap: break-word;
+.header{
+    margin-top: 5rem;
+    margin-left: 4rem;
+    color:white;
 }
-.container .title-right{
-    position: relative;
-    color: black;
-    font-size: 30px;
-    top: 8.5rem;
-    left: 5rem;
-    word-wrap: break-word;
-}
-.btn{
-    position: relative;
-    left: 20rem;
-    color: white;
+.header2{
     float: right;
-    background-color: #66BA9C;
-  
-}
-.container .zip-code{
-    position: relative;
-    top: 6rem;
-    left: 9.5rem;
+    margin-right: 9rem;
+    margin-top: 8rem;
+    
 }
 .sub-text{
     font-size: 20px;
-    position: relative;
-    top: 6rem;
-    left: .5rem;
+    margin-left: 4rem;
     color: #18503B;
     width: 35rem;
     word-wrap: break-word;
@@ -42,11 +22,28 @@ body{
 }
 .sub-text2{
     font-size: 20px;
-    position: relative;
-    top: 8rem;
-    left: .5rem;
+    margin-left: 4rem;
     color: #18503B;
     width: 35rem;
     word-wrap: break-word;
     font-weight: bold;
+}
+.tab{
+    margin-top: 3rem;
+    float: right;
+    font-weight: bold;
+}
+input{
+    margin-top: 3rem;
+    float: right;
+    margin-right: 12rem;
+   
+}
+.btn{
+    position: relative;
+    top: 12rem;
+    left: 9.5rem;
+    color: white;
+    float: right;
+    background-color: #66BA9C;
 }
