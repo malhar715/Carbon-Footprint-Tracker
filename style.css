@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(90deg, #66BA9C 50%, transparent 50%) !important;
+    height: 100vh;
+	background: linear-gradient(90deg, #66BA9C 50%,transparent 50%);
 }
 
 .left-side {
@@ -18,7 +19,7 @@ body{
 .header {
   padding-left: 4%;
   margin-top: 10%;
-  color:black;
+  color:white;
   font-size: 2.4vw;
 }
 
@@ -61,4 +62,3 @@ input {
     flex-direction: column;
     align-items: center;
 }
-
