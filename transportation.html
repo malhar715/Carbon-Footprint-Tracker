@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="#">
+		<title>Carbon Footprint Tracker</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/cover.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/transportation.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class = "container-fluid text-left">
+			<p>Carbon Footprint Tracker</p>
+		</header>
+		<div class="site-wrapper">
+			<div class="site-wrapper-inner">
+				<div class="col text-left">
+					<h1 class="cover-heading">Energy</h1>
+					<div class="inner-cover">
+						
+						<div class="tab">
+							Number of Lightbulbs in Your Home:
+  							<p><input type = "number" min="0" placeholder="Number of Lightbulbs" oninput="this.className = ''"></p>
+							Daily Light Consumption (in hours):
+  							<p><input type = "number" min="0" placeholder="Light Consumption" oninput="this.className = ''"></p>
+							Number of Times AC/Heating is used per Month:
+  							<p><input type = "number" min="0" placeholder="Frequency of AC/Heater use per Month" oninput="this.className = ''"></p>
+							Electricity Bill Cost:
+  							<p><input type = "number" min="0" placeholder="electricity bill cost" oninput="this.className = ''"></p>
+							Water Bill Cost:
+  							<p><input type = "number" min="0" placeholder="Water bill cost" oninput="this.className = ''"></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- This needs to go somewhere -->
+	<div class="progress">
+      	<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div style="overflow:auto;">
+  		<div style="float:right;">
+    	<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    	<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+	</div>
+		<script src="js/bootstrap.min.js"></script>
+		
+
+		<footer>
+		</footer>
+	</body>
+	
+</html>
