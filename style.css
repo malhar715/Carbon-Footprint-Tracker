@@ -1,0 +1,40 @@
+body{
+    background-size: 50% auto;
+    background-color: #66BA9C;
+}
+.page-title{
+    position: relative;
+    margin-top: 10rem;
+    margin-left: 5rem;
+    color: white;
+    width: 25rem;
+    word-wrap: break-word;
+}
+.btn{
+    color: white;
+    margin-left: 60rem;
+    width: 10rem;
+    background-color: #66BA9C;
+
+}
+.flex-rectangle:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+#subheader{
+    color: #18503B;
+    margin-top: 3rem;
+}
+#right-text{
+    text-align: center;
+    top: 20rem;
+    
+}
+.form-control{
+    margin-left: 50rem;
+    width: 10%;
+}
+
+
