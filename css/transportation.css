@@ -1,0 +1,17 @@
+.progress{
+	width: 50%;
+	margin-left: auto; 
+	margin-right:auto;
+}
+
+.inner-cover{
+	width: 75%;
+	margin: auto;
+	background: #92c6a8;
+}
+
+.container-fluid.text-left{
+      background-color: #92c6a8;
+      padding: 15px;
+}
+
