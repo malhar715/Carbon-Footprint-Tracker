@@ -1,27 +1,31 @@
 .header{
-	width: 1920px;
+	width: 100%;
+	margin-left:-8px;
+	margin-top:-8px;
+	padding-right:20px;
 	height: 100px;
 	background: #66BA9C;
 }
 
 .carbon {
+	position:relative;
 	width: 413px;
 	height: 55px;
-	left: 25px;
+	left: 20px;
 	top: 21px;
 
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 36px;
-	line-height: 70px;
+	line-height: 60px;
 	text-align: start;
 
 	color: #FFFFFF;
 }
 .results{
 	width:795px;
-	height:78px;
+	height:50px;
 	left:322px;
 	top:155px;
 	margin-bottom: 20px;
@@ -30,7 +34,7 @@
 	font-style:normal;
 	font-weight:normal;
 	font-size:64px;
-	line-height: 87px;
+	line-height: 20px;
 	text-align:center;
 	color: black;
 }
@@ -48,7 +52,7 @@
 width: 932px;
 height: 673px;
 left: 254px;
-top: 278px;
+top: 274px;
 
 background: #CDEBE0;
 border: 1px solid #000000;
@@ -114,5 +118,16 @@ line-height: 175px;
 text-align: center;
 
 color: #000000;
+
+}
+
+.resetbutton {
+	margin-top:10px;
+	background-color: #ff6961;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    padding: 8px 27px;
 
 }
