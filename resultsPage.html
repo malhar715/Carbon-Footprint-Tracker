@@ -1,0 +1,45 @@
+<!docttype html> 
+<html>
+
+<head>
+	<title>Results</title>
+	<link href="resultsPageStyle.css" rel="stylesheet">
+	<script src="resultsPage.js" type ="text/javascript"></script>
+</head>
+
+<body>
+	<div class="header"> 
+	<span class="carbon">
+	<p>Carbon Footprint Tracker</p>
+	</span>
+	</div>
+
+	<center>
+	<div class="results">
+	<p>Results</p>
+	</div>
+	</center>
+
+	<center>
+	<div class="box"> 
+	<span class="CO2">
+	<p>Your CO2 Emissions:</p>
+	</span>
+	<span class="dot">
+  	<span class="lb">
+  	<script>displayPounds();</script> lb
+  	</span>
+  	</span>
+  	<div class="smallerbox">
+  	<span class="recommendations">
+  		Recommendations:
+  		<br>
+  		<script>displayRecommendations();</script>
+  	</span>
+  	</div>
+    </div>
+	</center>
+	<a href="index.html" class="resetbutton">Start Over</a>
+</body>
+
+</html>
