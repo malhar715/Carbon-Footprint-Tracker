@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(90deg, #66BA9C 50%, transparent 50%);
+}
+.header{
+    margin-top: 5rem;
+    margin-left: 4rem;
+    color:white;
+}
+.header2{
+    float: right;
+    margin-right: 9rem;
+    margin-top: 8rem;
+    
+}
+.sub-text{
+    font-size: 20px;
+    margin-left: 4rem;
+    color: #18503B;
+    width: 35rem;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+.sub-text2{
+    font-size: 20px;
+    margin-left: 4rem;
+    color: #18503B;
+    width: 35rem;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+.tab{
+    margin-top: 3rem;
+    float: right;
+    font-weight: bold;
+}
+input{
+    margin-top: 3rem;
+    float: right;
+    margin-right: 12rem;
+   
+}
+.btn{
+    position: relative;
+    top: 12rem;
+    left: 9.5rem;
+    color: white;
+    float: right;
+    background-color: #66BA9C;
+}
