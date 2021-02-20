@@ -1,0 +1,60 @@
+.navbar {
+    background-color: #66BA9C;
+}
+
+h2 {
+    color: white;
+    margin-left: 24px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+form {
+    border: solid 1px black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #CDEBE0;
+}
+
+label, input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+label {
+    margin-left: 30px;
+}
+
+select, input {
+    margin-left: 15px;
+}
+
+button {
+    background-color: #66BA9C;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    padding: 8px 27px;
+}
+
+#nextbutton {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+#backbutton {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+}
