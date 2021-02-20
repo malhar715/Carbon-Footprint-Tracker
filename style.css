@@ -1,49 +1,64 @@
 body{
-    background: linear-gradient(90deg, #66BA9C 50%, transparent 50%);
+    background: linear-gradient(90deg, #66BA9C 50%, transparent 50%) !important;
 }
-.header{
-    margin-top: 5rem;
-    margin-left: 4rem;
-    color:white;
+
+.left-side {
+  position: absolute;
+  left: 0px;
+  width: 50%;
 }
-.header2{
-    float: right;
-    margin-right: 9rem;
-    margin-top: 8rem;
-    
+
+.right-side {
+  position: absolute;
+  right: 0px;
+  top: 30%;
+  width: 50%;
 }
+
+.header {
+  padding-left: 4%;
+  margin-top: 10%;
+  color:black;
+  font-size: 2.4vw;
+}
+
 .sub-text{
-    font-size: 20px;
-    margin-left: 4rem;
-    color: #18503B;
-    width: 35rem;
-    word-wrap: break-word;
-    font-weight: bold;
+  padding-left: 4%;
+  font-size: 1.5em;
+  color: #18503B;
+  word-wrap: break-word;
+  font-weight: bold;
 }
+
 .sub-text2{
-    font-size: 20px;
-    margin-left: 4rem;
+    font-size: 1.5em;
+    padding-left: 4%;
     color: #18503B;
-    width: 35rem;
     word-wrap: break-word;
     font-weight: bold;
 }
+
+input {
+    margin-top: 15%;
+    width: 100%;
+}
+
 .tab{
-    margin-top: 3rem;
-    float: right;
+    margin-top: 3%;
     font-weight: bold;
 }
-input{
-    margin-top: 3rem;
-    float: right;
-    margin-right: 12rem;
-   
-}
+
 .btn{
-    position: relative;
-    top: 12rem;
-    left: 9.5rem;
+    margin-top: 12%;
+    left: 12%;
     color: white;
-    float: right;
     background-color: #66BA9C;
+    width: 50%;
 }
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
