@@ -48,13 +48,23 @@ input {
     margin-top: 3%;
     font-weight: bold;
 }
-
+button{
+  background-color: #66BA9C;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  border: none;
+}
 .btn{
     margin-top: 12%;
     left: 12%;
     color: white;
     background-color: #66BA9C;
     width: 50%;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .buttons{
