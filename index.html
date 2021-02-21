@@ -10,30 +10,87 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- Custom css file-->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/transportation.css">
+    <link href="css/energy.css" rel="stylesheet">
+    <link href = "css/general.css" rel = "stylesheet">
+
 </head>
+
 <body>
-<!--Begin main content-->
-  <div class = "left-side">
-    <div class="header">
-        <h1>Carbon Footprint Tracker</h1>
+    <div class = "tab">
+        <div class = "left-side">
+            <div class="header">
+                <h1>Carbon Footprint Tracker</h1>
+            </div>
+            <p class="sub-text"> With the ever-looming threat of climate change,
+                    it is our responsibility to cut down on CO<sub>2</sub> emissions in any way possible.</p>
+            <p class="sub-text2"> Find out how you can make a difference today! </p>
+        </div>
+        <div class = "right-side">
+            <div class="buttons">
+                <label> Where are you located?</label>
+                <p><input placeholder="Enter zip code"  oninput="this.className = ''"></p>
+            </div>
+        </div>
     </div>
-    <p class="sub-text"> With the ever-looming threat of climate change,
-            it is our responsibility to cut down on CO<sub>2</sub> emissions in any way possible.</p>
-    <p class="sub-text2"> Find out how you can make a difference today! </p>
-  </div>
-  <div class = "right-side">
-    <div class="buttons">
-        <p class="tab"> Where are you located?</p>
-        <p><input placeholder="Enter zip code"></p>
-        <button type="button" id="start">Get Started!</button>
+
+    <div class = "tab">
+        <div class="navbar">
+            <h2>Carbon Footprint Tracker</h2>
+        </div>
+
+        <h1>Transportation</h1>
+
+        <form class="transportationform">
+            <label>Average mpg of car:</label>
+            <p><input type="number" min = "0" oninput="this.className = ''"></p>
+            <label>Average number of miles driven in a week:</label>
+            <p><input type="number" min = "0" oninput="this.className = ''"></p>
+            <label>Regular car maintenance:</label>
+            <p>
+                <select oninput="this.className = ''">
+                    <option value="">Choose One</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </p>
+            <label>How often you travel in a year:</label>
+            <p><input type="number" oninput="this.className = ''"></p>
+        </form>
     </div>
-  </div>
 
-<!--end main content->
-
-    <!-- Bootstrap js file-->
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- Jquery js file (Optional) -->
+    <div class="tab">
+        <header class = "container-fluid text-left">
+            <h2>Carbon Footprint Tracker</h2>
+        </header>
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="col text-left">
+                    <h1 class="cover-heading">Energy</h1>
+                    <div class="inner-cover">
+                        
+                        <label class = "labels">Number of Lightbulbs in Your Home:</label>
+                        <p class = "forms"><input type = "number" min="0" placeholder="Number of Lightbulbs" oninput="this.className = ''"></p>
+                        <label class = "labels">Daily Light Consumption (in hours):</label>
+                        <p class = "forms"><input type = "number" min="0" placeholder="Light Consumption" oninput="this.className = ''"></p>
+                        <label class = "labels">Number of Times AC/Heating is used per Month:</label>
+                        <p class = "forms"><input type = "number" min="0" placeholder="Frequency of AC/Heater use per Month" oninput="this.className = ''"></p>
+                        <label class = "labels">Monthly Electricity Bill Cost (per Month):</label>
+                        <p class = "forms"><input type = "number" min="0" placeholder="Electricity bill cost" oninput="this.className = ''"></p>
+                        <label class = "labels">Monthly Water Bill Cost:</label>
+                        <p class = "forms"><input type = "number" min="0" placeholder="Water bill cost" oninput="this.className = ''"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="overflow:auto;">
+        <div style="float:right;" >
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
     <script src="./js/jquery.3.5.1.js"></script>
+    <script src = "./js/init.js"></script>
 </body>
 </html>

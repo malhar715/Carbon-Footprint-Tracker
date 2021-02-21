@@ -12,36 +12,30 @@
     <link rel="stylesheet" href="transportation.css">
 </head>
 <body>
-    <div class="navbar">
-        <h2>Carbon Footprint Tracker</h2>
-    </div>
+    <div class = "tab">
+        <div class="navbar">
+            <h2>Carbon Footprint Tracker</h2>
+        </div>
 
-    <h1>Transportation</h1>
+        <h1>Transportation</h1>
 
-    <form class="transportationform">
-        <div class="tab">
+        <form class="transportationform">
+            <label>Average mpg of car:</label>
+            <p><input type="number" min = "0" oninput="this.className = ''"></p>
+            <label>Average number of miles driven in a week:</label>
+            <p><input type="number" min = "0" oninput="this.className = ''"></p>
+            <label>Regular car maintenance:</label>
             <p>
-                <label>Average mpg of car:</label>
-                <input type="number">
-            </p>
-            <p>
-                <label>Average number of miles driven in a week:</label>
-                <input type="number">
-            </p>
-            <p>
-                <label>Regular car maintenance:</label>
-                <select>
+                <select oninput="this.className = ''">
                     <option value="">Choose One</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
             </p>
-            <p>
-                <label>How often you travel in a year:</label>
-                <input type="number">
-            </p>
-        </div>
-    </form>
+            <label>How often you travel in a year:</label>
+            <p><input type="number" oninput="this.className = ''"></p>
+        </form>
+    </div>
 
     <button type="button" id="backbutton" onclick="nextPrev(-1)">Back</button>
     <button type="button" id="nextbutton" onclick="nextPrev(1)">Next</button>
