@@ -117,7 +117,7 @@ function displayPounds(formData)
   electricity = (formData[7] / 0.1188) * 947.2 * 12
 
   var pounds = (vehicle + electricity).toFixed(2);
-  let to_write = "Your annual CO<sub>2</sub> emission is: " + pounds + " lbs";
+  let to_write = "Your annual CO<sub>2</sub> emissions are: " + pounds + " lbs";
   document.getElementById("co2").innerHTML = to_write;
 
 }
@@ -125,7 +125,6 @@ function displayPounds(formData)
 function displayRecommendations(formData){
   
 let recommendations= [];
-//recommendations.length = 5;
 //if more than 30 lightbulbs then recommend lower power usage lightbulbs (form[4])
 //if vehicle mileage is high recommend using public transportation (form[42)
 // if electric consumption is high recommend turning off all appliances and devices overnight, washihng clothes with cold water
@@ -150,6 +149,7 @@ if (formData[7] > 20){
   recommendations.push("<li>You used the AC/Heater " + formData[7] + 
   " times this week. Consider turning up the thermostat by a few degrees.</li>")
 }
+
 if (formData[8] > 150){
   recommendations.push("<li>You spent $" + formData[8] + 
   " on electricity this month. Consider using energy star appliances.</li>")
@@ -157,6 +157,9 @@ if (formData[8] > 150){
 if (formData[9] > 150){
   recommendations.push("<li>You spent $" + formData[9] + 
   " on water this month. Consider taking quicker showers.</li>")
+}
+if (recommendations.length == 0){
+  document.getElementById("first").innerHTML = "Congrats! Your CO<sub>2</sub> emissions are lower than the national average."
 }
 for(let i=0; i<recommendations.length; i++) 
   {
@@ -166,6 +169,6 @@ for(let i=0; i<recommendations.length; i++)
       else{
       document.getElementById("first").innerHTML += recommendations[i]
       }
-    }
+  }
       
 }
