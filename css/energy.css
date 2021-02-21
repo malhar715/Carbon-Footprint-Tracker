@@ -18,12 +18,12 @@
       background-color: #66BA9C;
       padding-top: 8px;
       padding-bottom: 8px;
+      margin-left: -12px;
 }
 
 h2 {
 	color: white;
 	font-weight: normal;
-	margin-left: 12px;
 	font-size: 24px;
 }
 

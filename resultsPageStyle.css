@@ -1,17 +1,15 @@
 .header{
 	width: 100%;
-	padding-right:20px;
 	background: #66BA9C;
+	padding: 10px;
 }
 
-h2 {
-	margin-left: 24px;
+.carbon h2 {
+	margin-left: 12px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
-	line-height: 60px;
 	text-align: start;
-
 	color: #FFFFFF;
 }
 
