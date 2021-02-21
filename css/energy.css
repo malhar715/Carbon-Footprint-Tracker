@@ -2,16 +2,72 @@
 	width: 50%;
 	margin-left: auto; 
 	margin-right:auto;
+	margin-top: 30px;
 }
 
 .inner-cover{
-	width: 75%;
+	width: 50%;
 	margin: auto;
-	background: #92c6a8;
+	background: #CDEBE0;
+	padding: 10px;
+	border: solid 1px black;
+	border-radius: 10px;
 }
 
 .container-fluid.text-left{
-      background-color: #92c6a8;
-      padding: 15px;
+      background-color: #66BA9C;
+      padding-top: 8px;
+      padding-bottom: 8px;
 }
 
+h2 {
+	color: white;
+	font-weight: normal;
+	margin-left: 12px;
+	font-size: 24px;
+}
+
+h1 {
+	text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+label {
+    margin-left: 30px;
+	margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+input {
+    margin-left: 30px;
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #66BA9C;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    padding: 8px 27px;
+}
+
+#nextBtn {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+#prevBtn {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
