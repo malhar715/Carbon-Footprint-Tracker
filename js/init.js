@@ -5,6 +5,7 @@ function showTab(n) {
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
+  console.log("TAB" + n)
   // ... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
@@ -12,9 +13,15 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
-  if (n == (x.length - 1)) {
+  if (n == (x.length - 2)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
-  } else {
+  } else if (n == x.length -1 ){
+    entries = getAllEntries();
+    document.getElementById("prevBtn").style.display = "none";
+    document.getElementById("nextBtn").style.display = "none";
+    displayPounds(entries)
+    displayRecommendations(entries)
+  }else {
     if(n != 0){
       document.getElementById("nextBtn").innerHTML = "Next";
     } 
@@ -38,7 +45,8 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
     //...the form gets submitted:
-    document.getElementById("regForm").submit();
+    //document.getElementById("regForm").submit();
+    console.log(document.getElementsByName("formentry"))
     return false;
   }
   // Otherwise, display the correct tab:
@@ -50,6 +58,14 @@ function validateForm() {
   var x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
+  z = x[currentTab].getElementsByTagName("select");
+  console.log(y.value)
+  for( i = 0; i < y.length; i++){
+    console.log(y[i].value);
+  }
+  for( i = 0; i < z.length; i++){
+    console.log(z[i].value);
+  }
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
@@ -76,3 +92,44 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }*/
+function getAllEntries(){
+  y = document.getElementsByTagName("input")
+  z = document.getElementsByTagName("select")
+  entries = []
+  for(i = 0; i < 3; i++){
+    entries.push(y[i].value)
+  }
+  entries.push(z[0].value)
+  for(i = 3; i < y.length; i++){
+    entries.push(y[i].value)
+  }
+  console.log("ENTRIES" + entries)
+  return entries
+}
+
+function displayPounds(formData)
+{
+  vehicle = formData[1]* formData[2]  * 19.6
+  if(formData[3] == "yes"){
+    vehicle = vehicle * 99.96
+  }
+  travel = 0;
+  electricity = (formData[7] / 0.1188) * 947.2 * 12
+  document.getElementByClassName("lb:").(write(pounds + "lb"));
+}
+
+function displayRecommendations(){
+  
+let recommendations= ["Recommendation one", "Recommendation two", "Recommednation three", "Recommendation four"];
+//if more than 30 lightbulbs then recommend lower power usage lightbulbs (form[4])
+//if vehicle mileage is high recommend using public transportation (form[42)
+// if electric consumption is high recommend turning off all appliances and devices overnight, washihng clothes with cold water
+// if high AC usage recommend turning up the thermostat by a few degrees (form[6])
+//recommend use of energy star appliances (form[7])
+//if water consumption is high recommend quicker showers (form[8])
+for(let i=0; i<recommendations.length; i++) 
+  {
+      document.getElementByClassName("recommendations").write(recommendations[i] + ". ");
+    }
+      
+}

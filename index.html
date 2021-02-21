@@ -29,7 +29,7 @@
         <div class = "right-side">
             <div class="buttons">
                 <label> Where are you located?</label>
-                <p><input placeholder="Enter zip code"  oninput="this.className = ''"></p>
+                <p><input placeholder="Enter zip code"  name = "formentry" type = "text" oninput="this.className = ''"></p>
             </div>
         </div>
     </div>
@@ -43,19 +43,19 @@
 
         <form class="transportationform">
             <label>Average mpg of car:</label>
-            <p><input type="number" min = "0" oninput="this.className = ''"></p>
+            <p><input type="number" name = "formentry" min = "0" oninput="this.className = ''"></p>
             <label>Average number of miles driven in a week:</label>
-            <p><input type="number" min = "0" oninput="this.className = ''"></p>
+            <p><input type="number" name = "formentry" min = "0" oninput="this.className = ''"></p>
             <label>Regular car maintenance:</label>
             <p>
-                <select oninput="this.className = ''">
+                <select name = "formentry" oninput="this.className = ''">
                     <option value="">Choose One</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
             </p>
             <label>How often you travel in a year:</label>
-            <p><input type="number" oninput="this.className = ''"></p>
+            <p><input name = "formentry" type="number" oninput="this.className = ''"></p>
         </form>
     </div>
 
@@ -70,20 +70,53 @@
                     <div class="inner-cover">
                         
                         <label class = "labels">Number of Lightbulbs in Your Home:</label>
-                        <p class = "forms"><input type = "number" min="0" placeholder="Number of Lightbulbs" oninput="this.className = ''"></p>
+                        <p class = "forms"><input name = "formentry" type = "number" min="0" placeholder="Number of Lightbulbs" oninput="this.className = ''"></p>
                         <label class = "labels">Daily Light Consumption (in hours):</label>
-                        <p class = "forms"><input type = "number" min="0" placeholder="Light Consumption" oninput="this.className = ''"></p>
+                        <p class = "forms"><input name = "formentry" type = "number" min="0" placeholder="Light Consumption" oninput="this.className = ''"></p>
                         <label class = "labels">Number of Times AC/Heating is used per Month:</label>
-                        <p class = "forms"><input type = "number" min="0" placeholder="Frequency of AC/Heater use per Month" oninput="this.className = ''"></p>
+                        <p class = "forms"><input name = "formentry" type = "number" min="0" placeholder="Frequency of AC/Heater use per Month" oninput="this.className = ''"></p>
                         <label class = "labels">Monthly Electricity Bill Cost (per Month):</label>
-                        <p class = "forms"><input type = "number" min="0" placeholder="Electricity bill cost" oninput="this.className = ''"></p>
+                        <p class = "forms"><input name = "formentry" type = "number" min="0" placeholder="Electricity bill cost" oninput="this.className = ''"></p>
                         <label class = "labels">Monthly Water Bill Cost:</label>
-                        <p class = "forms"><input type = "number" min="0" placeholder="Water bill cost" oninput="this.className = ''"></p>
+                        <p class = "forms"><input name = "formentry" type = "number" min="0" placeholder="Water bill cost" oninput="this.className = ''"></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class = "tab">
+    	<div class="header"> 
+		<span class="carbon">
+		<h2>Carbon Footprint Tracker</h2>
+			</span>
+		</div>
+
+		<center>
+		<div class="results">
+		<h1>Results</h1>
+		</div>
+		</center>
+
+		<center>
+		<div class="box"> 
+		<span class="CO2">
+		<p>Your CO2 Emissions:</p>
+		</span>
+		<span class="dot">
+  		<span class="lb">
+  		</span>
+  		</span>
+  		<div class="smallerbox">
+  		<span class="recommendations">
+  			Recommendations:
+  			<br>
+  		</span>
+  		</div>
+    	</div>
+		</center>
+		<a href="index.html" class="resetbutton">Start Over</a>
+    </div>
+
     <div style="overflow:auto;">
         <div style="float:right;" >
         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
