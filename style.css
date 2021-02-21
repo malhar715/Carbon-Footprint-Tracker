@@ -1,3 +1,6 @@
+body{
+  font-family: 'Roboto Slab', serif;
+}
 #main-page{
     height: 100vh;
 	background: linear-gradient(90deg, #66BA9C 50%,transparent 50%);
@@ -28,7 +31,7 @@
   font-size: 1.5em;
   color: #18503B;
   word-wrap: break-word;
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
