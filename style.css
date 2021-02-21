@@ -1,3 +1,5 @@
+
+
 #main-page{
     height: 100vh;
 	background: linear-gradient(90deg, #66BA9C 50%,transparent 50%);
@@ -91,4 +93,19 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+ul{
+  text-align: center;
+  list-style-position: inside;
+}
+#restart{
+  background-color: #66BA9C;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  border: none;
+  width: 10%;
+}
+#restart:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

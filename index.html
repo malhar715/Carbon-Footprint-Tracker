@@ -91,16 +91,16 @@
 			</span>
 		</div>
 
-		<center>
+		
 		<div class="results">
 		<h1>Results</h1>
 		</div>
-		</center>
+		
 
 		<center>
 		<div class="box"> 
 		<span class="CO2">
-		<p>Your CO2 Emissions:</p>
+		<p id="co2">Your CO2 Emissions:</p>
 		</span>
 		<span class="dot">
   		<span class="lb">
@@ -108,13 +108,15 @@
   		</span>
   		<div class="smallerbox">
   		<span class="recommendations">
-  			Recommendations:
+  			<h3>Recommendations:</h3>
+        <ul id="first">First:</ul>
+    
   			<br>
   		</span>
   		</div>
     	</div>
 		</center>
-		<a href="index.html" class="resetbutton">Start Over</a>
+		<input id="restart" type=button onClick="location.href='index.html'" value='Restart'>
     </div>
 
     <div style="overflow:auto;">
