@@ -8,7 +8,6 @@
 
 h2 {
 	margin-left: 24px;
-	font-family: Nunito;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -17,10 +16,10 @@ h2 {
 
 	color: #FFFFFF;
 }
+
 h1 {
 	margin-top: 30px;
 	margin-bottom: 30px;
-	font-family: Nunito;
 	font-style:normal;
 	font-weight:normal;
 	line-height: 20px;
@@ -45,7 +44,6 @@ h1 {
 }
 
 .CO2 {
-	font-family: Nunito;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 27px;
@@ -65,18 +63,18 @@ h1 {
 }
 
 .recommendations {
-	font-family: Nunito;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 50px;
 	text-align: center;
+}
 
-color: #000000;
+.recommendations h3 {
+	margin-top: 15px;
 }
 
 .lb {
-	font-family: Nunito;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 48px;
@@ -98,4 +96,9 @@ color: #000000;
 
 .resetbutton:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#restart {
+	position: relative;
+	bottom: 24px;
 }
