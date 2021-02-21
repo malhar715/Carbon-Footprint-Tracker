@@ -109,14 +109,18 @@ function getAllEntries(){
 
 function displayPounds(formData)
 {
-  vehicle = formData[1]* formData[2]  * 19.6
+ 
+  vehicle = formData[1] * formData[2]  * 19.6
   if(formData[3] == "yes"){
     vehicle = vehicle * 99.96
   }
-  travel = 0;
+
+  //on average: planes emit 90kg/198.416lbs of CO2 per hour of flight time
+
+  travel = formData[4] * 198.416;
   electricity = (formData[7] / 0.1188) * 947.2 * 12
 
-  var pounds = (vehicle + electricity).toFixed(2);
+  var pounds = (vehicle + electricity + travel).toLocaleString();
   let to_write = "Your annual CO<sub>2</sub> emissions are: " + pounds + " lbs";
   document.getElementById("co2").innerHTML = to_write;
 
@@ -125,26 +129,27 @@ function displayPounds(formData)
 function displayRecommendations(formData){
   
 let recommendations= [];
-//if more than 30 lightbulbs then recommend lower power usage lightbulbs (form[4])
-//if vehicle mileage is high recommend using public transportation (form[42)
-// if electric consumption is high recommend turning off all appliances and devices overnight, washihng clothes with cold water
-// if high AC usage recommend turning up the thermostat by a few degrees (form[6])
-//recommend use of energy star appliances (form[7])
-//if water consumption is high recommend quicker showers (form[8])
+
 
 // Currently the array is: 
 
     // [0: zipcode, 1: mpg of car, 2: # of miles driven in a week, 3: car maintenance, 4: travel/year
     // 5: # lightbulbs, 6: daily light consumption, 7: # times AC was used, 8: elec bill, 9: water bill ]
+if (formData[2] > 300){
+  recommendations.push("<li>You drove " + formData[2] + 
+  " miles this week. Consider opting for more public transportation.</li>")
+}
+
+if (formData[4] > 40){
+  recommendations.push("<li>On average, you spend " + formData[4] + 
+  " hours flying per year. Consider looking into more efficient flightpaths for your trips.</li>")
+}
 
 if (formData[5] > 30){
   recommendations.push("<li>You are currently using " + formData[5] + 
   " lightbulbs. Consider using lightbulbs with a lower wattage.</li>")
 }
-if (formData[2] > 300){
-  recommendations.push("<li>You drove " + formData[2] + 
-  " miles this week. Consider opting for more public transportation.</li>")
-}
+
 if (formData[7] > 20){
   recommendations.push("<li>You used the AC/Heater " + formData[7] + 
   " times this week. Consider turning up the thermostat by a few degrees.</li>")
@@ -158,6 +163,7 @@ if (formData[9] > 150){
   recommendations.push("<li>You spent $" + formData[9] + 
   " on water this month. Consider taking quicker showers.</li>")
 }
+
 if (recommendations.length == 0){
   document.getElementById("first").innerHTML = "Congrats! Your CO<sub>2</sub> emissions are lower than the national average."
 }
