@@ -139,12 +139,12 @@ let recommendations= [];
 
     // [0: zipcode, 1: mpg of car, 2: # of miles driven in a week, 3: car maintenance, 4: travel/year
     // 5: # lightbulbs, 6: daily light consumption, 7: # times AC was used, 8: elec bill, 9: water bill ]
-if (formData[2] > 300){
-  recommendations.push("<li>You drove " + formData[2] + 
-  " miles this week. Consider opting for more public transportation.</li>")
+if (formData[2] > 250){
+  recommendations.push("<li>You drive " + formData[2] + 
+  " miles a week on average. Consider opting for more public transportation.</li>")
 }
 
-if (formData[4] > 40){
+if (formData[4] > 16){
   recommendations.push("<li>On average, you spend " + formData[4] + 
   " hours flying per year. Consider looking into more efficient flightpaths for your trips.</li>")
 }
@@ -153,22 +153,27 @@ if (formData[5] > 30){
   recommendations.push("<li>You are currently using " + formData[5] + 
   " lightbulbs. Consider using lightbulbs with a lower wattage.</li>")
 }
+if (formData[6] > 8){
+  recommendations.push("<li>You have the lights on for " + formData[6] + 
+  " hours a day on average. Try to turn off lights that are not in use. </li>")
+}
 
 if (formData[7] > 20){
-  recommendations.push("<li>You used the AC/Heater " + formData[7] + 
-  " times this week. Consider turning up the thermostat by a few degrees.</li>")
+  recommendations.push("<li>You use the AC/Heater " + formData[7] + 
+  " times a month on average. Consider turning up the thermostat by a few degrees.</li>")
 }
 
-if (formData[8] > 150){
-  recommendations.push("<li>You spent $" + formData[8] + 
-  " on electricity this month. Consider using energy star appliances.</li>")
+if (formData[8] > 110){
+  recommendations.push("<li>You pay $" + formData[8] + 
+  " for electricity per month on average. Consider using energy star appliances.</li>")
 }
-if (formData[9] > 150){
-  recommendations.push("<li>You spent $" + formData[9] + 
-  " on water this month. Consider taking quicker showers.</li>")
+if (formData[9] > 71){
+  recommendations.push("<li>You pay $" + formData[9] + 
+  " for water per month on average. Consider taking quicker showers.</li>")
 }
 
 if (recommendations.length == 0){
+  document.getElementById("recom").innerHTML = ""
   document.getElementById("first").innerHTML = "Congrats! Your CO<sub>2</sub> emissions are lower than the national average."
 }
 for(let i=0; i<recommendations.length; i++) 
