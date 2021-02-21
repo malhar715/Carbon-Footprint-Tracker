@@ -109,16 +109,20 @@ function getAllEntries(){
 
 function displayPounds(formData)
 {
- 
-  vehicle = formData[1] * formData[2]  * 19.6
+ // we have to divide miles driven by miles per gallon to get # of gallons of gas used 
+  vehicle = formData[2] / formData[1] * 52
   if(formData[3] == "yes"){
     vehicle = vehicle * 99.96
   }
-
+  else{
+    vehicle = vehicle * 19.6
+  }
+  
   //on average: planes emit 90kg/198.416lbs of CO2 per hour of flight time
-
   travel = formData[4] * 198.416;
-  electricity = (formData[7] / 0.1188) * 947.2 * 12
+
+  // 947.2 is in lbs/mwH! we have to divide by 1000 to convert to kWH, hence the 0.9472
+  electricity = (formData[8] / 0.1188) * 0.9472 * 12
 
   var pounds = (vehicle + electricity + travel).toLocaleString();
   let to_write = "Your annual CO<sub>2</sub> emissions are: " + pounds + " lbs";

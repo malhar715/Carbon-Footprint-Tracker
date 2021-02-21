@@ -99,7 +99,12 @@ button:hover {
 }
 ul{
   text-align: center;
+  padding-left: 0;
+ 
+}
+li{
   list-style-position: inside;
+  margin: 20px 0;
 }
 #restart{
   background-color: #66BA9C;
